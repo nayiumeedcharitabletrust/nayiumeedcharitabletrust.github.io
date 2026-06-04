@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayi Umeed Charitable Trust</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+
+    <div class="logo-area">
+        <img src="Images/Logo.png" alt="Logo">
+        <div>
+            <h2>Nayi Umeed Charitable Trust</h2>
+            <p>Helping Humanity, Building Hope</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#donation">Donate</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <a href="#donation" class="donate-btn">Donate Now</a>
+
+</header>
+   <section class="hero">
+    <div class="hero-content">
+        <span class="hero-badge">❤️ Serving Humanity With Hope</span>
+        <h1>Nayi Umeed Charitable Trust</h1>
+        <p>Helping Humanity, Building Hope</p>
+
+        <div class="hero-buttons">
+            <a href="#donation" class="btn">Donate Now</a>
+        </div>
+    </div>
+</section>
+
+    <section id="about" class="about">
+    <div class="container">
+        <div class="about-card">
+            <span class="section-tag">🌱 About Our Trust</span>
+            <h2>About Us</h2>
+
+            <p>At Nayi Umeed Charitable Trust, we believe that every life deserves hope, dignity, and an opportunity to thrive.</p>
+            <p>Founded with a vision to create a more compassionate and inclusive society, our trust is dedicated to supporting underprivileged children, vulnerable families, senior citizens, and individuals facing hardship. Through education, healthcare assistance, food distribution, community development, and humanitarian initiatives, we strive to bring positive change to the lives of those who need it most.</p>
+            <p>Every smile we create, every child we educate, and every family we support strengthens our belief that even a small act of kindness can transform lives. Our mission is not only to provide immediate help but also to empower individuals and communities to build a brighter and more sustainable future.</p>
+            <p>Together with our volunteers, donors, and well-wishers, we are creating a movement of hope, compassion, and social responsibility. We invite you to join us in this journey and become a part of a meaningful change that touches countless lives.</p>
+            <p>Because when we stand together, hope becomes stronger, dreams become possible, and humanity shines brighter.</p>
+
+</div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="work" class="work">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="work-box">
+                <div class="card">
+                    <h3>📚 Education</h3>
+                    <p>Providing educational support for children.</p>
+                </div>
+                <div class="card">
+                    <h3>🏥 Health Care</h3>
+                    <p>Organizing health camps for needy people.</p>
+                </div>
+                <div class="card">
+                    <h3>🍛 Food Distribution</h3>
+                    <p>Providing food to underprivileged families.</p>
+                </div>
+                <div class="card">
+                    <h3>👨‍👩‍👧‍👦 Social Welfare</h3>
+                    <p>Working for community development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <img src="Images/first.png" alt="Gallery Image">
+                <img src="Images/secon.png" alt="Gallery Image">
+                <img src="Images/third.png" alt="Gallery Image">
+                <img src="Images/fourt.png" alt="Gallery Image">
+                <img src="Images/five.png" alt="Gallery Image">
+                <img src="Images/six.png" alt="Gallery Image">
+                <img src="Images/seven.png" alt="Gallery Image">
+                <img src="Images/eight.png" alt="Gallery Image">
+                <img src="Images/nine.png" alt="Gallery Image">
+                <img src="Images/Trust Front.png" alt="Gallery Image">
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="donation" class="donation">
+        <div class="container">
+
+            <div class="donation-top">
+                <span>❤️ Together We Can Make A Difference</span>
+                <h2>Support Our Mission</h2>
+                <p>Your contribution helps us provide education, healthcare, food, and support to those in need.</p>
+            </div>
+
+            <div class="donation-main">
+
+                <div class="donation-left">
+                    <h3>🤝 Make a Donation</h3>
+                    <p>Enter an amount and generate QR code to donate easily via UPI.</p>
+
+                    <div class="amount-box">
+                        <span>₹</span>
+                        <input type="number" id="amount" placeholder="Enter Amount">
+                    </div>
+
+                    <div class="quick-amounts">
+                        <button onclick="setAmount(100)">₹100</button>
+                        <button onclick="setAmount(200)">₹200</button>
+                        <button onclick="setAmount(500)">₹500</button>
+                        <button onclick="setAmount(1000)">₹1000</button>
+                        <button onclick="setAmount(2000)">₹2000</button>
+                    </div>
+
+                    <button onclick="generateQR()" class="generate-btn">▦ Generate Donation QR</button>
+
+                    <p class="safe">🔒 Secure & Safe Transaction</p>
+                </div>
+
+                <div class="qr-card">
+                    <h4>Scan & Pay</h4>
+                    <div id="qrcode"></div>
+                    <h5>Nayi Umeed Charitable Trust</h5>
+                    <p>47152026022059455@cbin</p>
+                </div>
+
+                <div class="donation-right">
+                    <h3>💙 Donate Via UPI</h3>
+                    <div class="upi-box">
+                        <strong>UPI ID:</strong> 47152026022059455@cbin
+                    </div>
+
+                    <h3>🏦 Bank Details</h3>
+                    <p><b>Account Name:</b> Nayi Umeed Charitable Trust</p>
+                    <p><b>Account Number:</b> 5945562890</p>
+                    <p><b>IFSC Code:</b> CBIN0284715</p>
+                    <p><b>Bank Name:</b> Central Bank of India</p>
+
+                    <div class="secure-box">
+                        🛡️ Your donation is 100% secure and makes a real difference.
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="successMsg"></div>
+
+            <div class="thank-banner">
+                💙 Your small contribution can bring a big change in someone’s life.
+                <span>Thank You! 💛</span>
+            </div>
+
+        </div>
+    </section>
+
+    <<section id="contact" class="contact">
+    <div class="container">
+
+        <div class="contact-heading">
+            <span>📞 Get In Touch</span>
+            <h2>Contact Us</h2>
+            <p>For donation, volunteering, help request or any enquiry, please contact us.</p>
+        </div>
+
+        <div class="contact-main">
+
+            <div class="contact-info-card">
+                <h3>Nayi Umeed Charitable Trust</h3>
+
+                <div class="info-item">
+                    <b>📍 Address</b>
+                    <p>Baraharaganj, Padrauna, Kushinagar UP-274304</p>
+                </div>
+
+                <div class="info-item">
+                    <b>📞 Mobile</b>
+                    <p>+91 8957252682, +91 7379412164</p>
+                </div>
+
+                <div class="info-item">
+                    <b>✉️ Email</b>
+                    <p>nayiumeedcharitabletrust@gmail.com</p>
+                </div>
+
+                <div class="info-item">
+                    <b>⏰ Office Time</b>
+                    <p>Monday to Saturday, 10:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+
+            <div class="enquiry-form-card">
+                <h3>Send Enquiry</h3>
+
+                <form onsubmit="sendToWhatsApp(event)">
+                    <input type="text" id="name" placeholder="Your Name" required>
+
+                    <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+                    <input type="email" id="email" placeholder="Email Address">
+
+                    <select id="subject" required>
+                        <option value="">Select Enquiry Type</option>
+                        <option>Donation Enquiry</option>
+                        <option>Volunteer Registration</option>
+                        <option>Need Help</option>
+                        <option>General Enquiry</option>
+                    </select>
+
+                    <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                    <button type="submit" class="send-btn">Send Enquiry</button>
+                </form>
+
+                <p id="formMsg"></p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <a href="https://wa.me/918957252682" class="whatsapp" target="_blank">💬</a>
+
+    <footer>
+        <p>© 2026 Nayi Umeed Charitable Trust. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+<a href="https://wa.me/918957252682" class="whatsapp" target="_blank">💬</a>
+
+</html>
